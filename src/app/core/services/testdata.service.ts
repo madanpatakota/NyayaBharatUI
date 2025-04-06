@@ -13,6 +13,11 @@ export class TestdataService {
     constructor(private http: HttpClient) { }
 
     getAll(): Observable<Testdata[]> {
+        console.log("Calling API:", `${environment.apiUrl}/Testdata`);
         return this.http.get<Testdata[]>(this.baseUrl);
     }
 }
+
+//Testdata -
+//https://localhost:7185/api/Testdata
+//https://localhost:7185/api/Testdata
