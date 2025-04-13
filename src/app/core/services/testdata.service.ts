@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
     providedIn: 'root',
 })
 export class TestdataService {
-    private baseUrl = `${environment.apiUrl}/Testdata`;
+    private baseUrl = `${environment.apiUrl}/Test`;
 
     constructor(private http: HttpClient) { }
 
     getAll(): Observable<Testdata[]> {
-        console.log("Calling API:", `${environment.apiUrl}/Testdata`);
+        console.log("Calling API:", `${environment.apiUrl}/Test`);
         return this.http.get<Testdata[]>(this.baseUrl);
     }
 }
