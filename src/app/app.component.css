@@ -1,0 +1,41 @@
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #144164;
+  color: white;
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: white;
+}
+
+.mobile-menu {
+  background: #144164;
+  color: white;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links a {
+    display: none;
+  }
+}

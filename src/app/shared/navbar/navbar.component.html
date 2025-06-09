@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="toolbar mat-elevation-z6">
+    <div class="toolbar-content">
+        <div class="logo-title">
+            <img src="assets/icons/Law.png" alt="Law Icon" class="logo-icon" />
+            <span class="brand">Nyayabharat</span>
+        </div>
+
+        <span class="spacer"></span>
+
+        <div class="nav-links" fxHide fxShow.gt-sm>
+            <a mat-button routerLink="/">Home</a>
+            <a mat-button routerLink="/ipc">IPC</a>
+            <a mat-button routerLink="/crpc">CrPC</a>
+            <a mat-button routerLink="/cpc">CPC</a>
+            <a mat-button routerLink="/constitution">Constitution</a>
+            <a mat-button routerLink="/articles">Articles</a>
+            <a mat-button routerLink="/about">About</a>
+            <a mat-button routerLink="/contact">Contact</a>
+        </div>
+
+        <button mat-icon-button (click)="toggleMenu()" fxShow fxHide.gt-sm>
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<mat-nav-list *ngIf="isMenuOpen" class="mobile-menu" fxShow fxHide.gt-sm>
+    <a mat-list-item routerLink="/">Home</a>
+    <a mat-list-item routerLink="/ipc">IPC</a>
+    <a mat-list-item routerLink="/crpc">CrPC</a>
+    <a mat-list-item routerLink="/cpc">CPC</a>
+    <a mat-list-item routerLink="/constitution">Constitution</a>
+    <a mat-list-item routerLink="/articles">Articles</a>
+    <a mat-list-item routerLink="/about">About</a>
+    <a mat-list-item routerLink="/contact">Contact</a>
+    </mat-nav-list>
+
+
+  image  <img src="../../../assets/icons/download.jpg" alt="download Icon" class="logo-icon" />
+
+  
+  image  <img src="download.jpg" />
