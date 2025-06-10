@@ -1,4 +1,5 @@
 
+
 .toolbar {
   position: sticky;
   top: 0;
@@ -19,17 +20,16 @@
   gap: 10px;
 }
 
-.logo-icon {
-  height: 32px;
-  width: 32px;
-}
+
 
 .brand {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1px;
-  color: #ffffff;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
+
 
 .spacer {
   flex: 1 1 auto;
@@ -61,10 +61,10 @@
 }
 
 .logo-icon {
-    height: 32px;
-    width: 32px;
-    object-fit: contain;
-    margin-right: 8px;
-  }
-  
-  
+  height: 56px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  margin-right: 12px;
+  display: block;
+}
